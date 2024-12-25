@@ -1,14 +1,15 @@
 // Complete the js code
 function Car(make, model) {
+	this.make=make;
+	this.model=model;
 
 	get getMakeModel(){
-		return (this.make, this.model);
+		return this.make+" "+this.model;
 	}
 }
 
 function SportsCar(make, model, topSpeed) {
-	this.make=make;
-	this.model=model;
+	car.call(this);
 	this.topSpeed=topSpeed;
 
 	get getTopSpeed(){
